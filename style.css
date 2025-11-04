@@ -1,9 +1,15 @@
-header, main{
+header, main {
     background-color: lightblue;
     text-align: center;
     font-family: Arial;
     font-size: 20px;
 }
-body{
+h1 {
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+}
+body {
   font-family: Arial;
 }
