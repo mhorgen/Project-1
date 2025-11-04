@@ -1,11 +1,11 @@
 *{
   color: blue;
 }
-header{
-  color: blue;
-  margin: center;
-  font-family: Arial;
-  font-size: 50px;
+header {
+    color: blue;
+    text-align: center;
+    font-family: Arial;
+    font-size: 50px;
 }
 body{
   font-family: Arial;
