@@ -1,16 +1,61 @@
-header, main {
-    background-color: lightblue;
-    text-align: center;
-    font-family: Arial;
-    font-size: 50px;
-}
-h1 {
-    background-color: lightblue;
-    text-align: center;
-    font-family: Arial;
-    font-size: 100px;
-}
 body {
-    background-color: green;
-    font-size: 20px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 220px;
+  background-color: #333;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  border-bottom: 1px solid #444;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+/* Main content styles */
+.main-content {
+  margin-left: 220px; /* Same as sidebar width */
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  flex: 1;
+}
+
+h1, h2, h3, h4 {
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
 }
