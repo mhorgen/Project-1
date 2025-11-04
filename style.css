@@ -2,6 +2,11 @@
   color: blue;
   margin-left=margin-right;
 }
+header{
+  margin: center;
+  font-family: Arial;
+  font-size: 50px;
+}
 body{
   font-family: Arial;
 }
