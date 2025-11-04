@@ -1,62 +1,92 @@
 body {
-  margin: 200;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px 40px;
+    max-width: 960px; /* Limits content width for readability */
+    color: #333;
 }
 
-/* Header: stays fixed at the very top */
+/* --- 2. HEADER AND NAVIGATION --- */
 header {
-  position: flex;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #004d99;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  z-index: 1000; /* makes sure it stays above everything */
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #0056b3;
 }
 
-/* Wrapper for sidebar + content */
-.page {
-  display: flex;
-  margin-top: 80px; /* leaves room for the fixed header */
+header h1 {
+    text-align: center;
+    color: #0056b3;
+    margin: 0;
+    font-size: 2em;
 }
 
-/* Sidebar: scrolls with the page */
-.sidebar {
-  width: 220px;
-  background-color: #333;
-  color: white;
-  padding: 50px 0;
-  height: auto; /* allows it to grow with content */
+nav ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 10px 0 0 0;
+    text-align: center;
 }
 
-.sidebar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+nav li {
+    display: inline; /* Makes the list items horizontal */
+    margin: 0 10px;
 }
 
-.sidebar a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 12px 20px;
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s, color 0.3s;
 }
 
-.sidebar a:hover {
-  background-color: #575757;
+nav a:hover {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
 }
 
-/* Main content area */
-.content {
-  flex: 1;
-  background-color: white;
-  padding: 20px;
-  min-height: 100vh;
+/* --- 3. ASIDE (SIDEBAR) STYLES --- */
+aside {
+    /* Sets the sidebar apart from the main content */
+    border-left: 5px solid #0056b3; 
+    background-color: #f8f9fa;      
+    padding: 15px;                  
+    margin: 20px 0;                 
+    font-style: italic;             
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 4px;
 }
 
-h1, h2 {
-  margin: 0 0 10px 0;
+aside ul {
+    list-style: disc; /* Keep bullets for lists inside the sidebar */
+    margin-left: 20px;
+}
+
+/* --- 4. FIGURE AND CAPTION STYLES --- */
+figure {
+    /* Groups image and caption */
+    display: block;
+    margin: 40px auto; 
+    padding: 10px;
+    border: 1px solid #ddd; 
+    max-width: 80%; 
+    text-align: center; 
+}
+
+figure img {
+    /* Ensures images fit and are centered */
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin: 0 auto 10px; 
+}
+
+figcaption {
+    /* Styles for the caption text */
+    font-size: 0.9em; 
+    color: #6c757d;   
+    padding-top: 5px;
+    border-top: 1px dashed #e9ecef; 
 }
