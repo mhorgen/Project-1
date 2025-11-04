@@ -11,5 +11,6 @@ h1 {
     font-size: 20px;
 }
 body {
-  font-family: Arial;
+    background-color: pink;
+    font-family: Arial;
 }
